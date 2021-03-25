@@ -1,0 +1,70 @@
+body{
+    background-image: url("./Main-background.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    overflow-y: hidden;
+}
+h1 {
+    font-family: Comic Sans MS;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    padding: 0 5px 0 5px;
+    color: white;
+    /*background: linear-gradient(to right, red, blue);*/
+    border: solid white 2px;
+}
+.button-day {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    margin: 4px 2px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    cursor: pointer;
+}
+.button-day:hover {
+    background-color:  #cfbdc0;
+    color: black;
+}
+.button-day:active {
+    background-color: #cfbdc0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.button-night {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    margin: 4px 2px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    cursor: pointer;
+}
+  .button-night:hover {
+    background-color:  #2c080c;
+    color: white;
+}
+.button-night:active {
+    background-color: #2c080c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

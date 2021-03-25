@@ -1,0 +1,351 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+html {
+    background-color: #cfbdc0;
+}
+html,body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+body {
+    Overflow-y:scroll;
+}
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+  
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+ul { 
+    list-style-type: none; 
+} 
+/* The navigation links inside the overlay */
+.overlay div a {
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 2.5vh;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    border-bottom: 1px solid #222;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    font-size: 60px;
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+span {
+    position: fixed;
+}
+.menu {
+    color: black;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+.menu:hover {
+    color: gray;
+}
+.button-sun {
+    color: black;
+    background-color: #cfbdc0;
+    font-size:25px;
+    border: none;
+    margin: 2.5px;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    z-index: 10;
+}
+.button-moon {
+    color: black;
+    background-color: #cfbdc0;
+    font-size:25px;
+    border: none;
+    margin: 2.5px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    z-index: 10;
+}
+.button-sun:hover {
+    color: gold;
+}
+.button-moon:hover {
+    color: gray;
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 4vh;
+    position: relative;
+    color: black;
+    background-color: rgb(124, 124, 124);
+}
+
+/*Homepage*/
+.Intro-img {
+    margin-top: 20px;
+    float: right;
+    display: block;
+    box-align: middle;
+    margin-right: 5vh;
+    height: 60vh;
+    width: 60vh;
+    border: solid 5px black;
+}
+.Intro {
+    margin-top: 48px;
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+.Intro-text {
+    text-indent: 5%;
+    overflow: hidden;
+}
+.Intro-text p {
+    font-family: 'Times New Roman';
+    font-size: 3vh;
+    padding-left: 20%;
+    padding-right: 5%;
+    color: black;
+}
+ol {
+    font-family: 'Times New Roman';
+    font-size: 3vh;
+    padding-left: 20%;
+    padding-right: 5%;
+    color: black;
+}
+.Intro-text strong {
+    margin-left: 20%;
+}
+
+/*About PAGE*/
+.clearfix {
+    clear: both;
+}
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 3.5vh;
+    position: relative;
+    color: black; 
+    text-indent: 0%;
+    border-bottom: 3px solid black; 
+}
+.About-img {
+    float: right;
+    display: block;
+    padding-right: 2%;
+    box-align: middle;
+}
+.About {
+    margin-top: 48px;
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+.About-text {
+    text-indent: 5%;
+    overflow: hidden;
+    margin-left: 10%;
+    width: 80%;
+}
+.About-text p {
+    font-family: 'Times New Roman';
+    padding-right: 32%;
+    font-size: 3vh;
+    color: black;
+}
+.About img {
+    border-radius: 50%;
+    padding-right: 5%;
+    width: 20vh;
+    height: 20vh;
+}
+.movies {
+    float: left;
+    width: 49.9%;
+    border-right: solid 1px black;
+}
+.series {
+    float: right;
+    width: 49.9%;
+    border-left: solid 1px black;
+}
+.line {
+    float:left;
+    text-align: center;
+    width: 100%;
+    height: 0%;
+    color: transparent;
+}
+.games {
+    float: left;
+    width: 49.9%;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+}
+.books {
+    float: right;
+    width: 49.9%;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+}
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 3vh;
+    font-weight: bold;
+    position: relative;
+    color: black;
+    text-indent: 0%;
+    text-align: center;
+}
+ul li {
+    font-family: 'Times New Roman';
+    font-size: 2vh;
+    position: relative;
+    color: black;
+}
+.Trailers-button {
+    position: relative;
+}
+.iframe-Trailers {
+    position: relative;
+    margin-top: 20px;
+}
+
+/*CV PAGE*/
+.button-Ro {
+    font-size:20px;
+    position: absolute;
+    top: 100px;
+    left: 50vh;
+}
+.iframe-Ro {
+    position: absolute;
+    top: 130px;
+    left: 30vh;
+    width: 60vh;
+    height: 80vh;
+}
+.button-Eng {
+    font-size:20px;
+    position: absolute;
+    top: 100px;
+    right: 55vh;
+}
+.iframe-Eng {
+    position: absolute;
+    top: 130px;
+    right: 32vh;
+    width: 60vh;
+    height: 80vh;
+}
+
+/*CONTACT PAGE*/
+.map {
+    border: solid 5px black;
+    position: absolute;
+    right: 10vh;
+    top: 5vh;
+    height: 50vh;
+    width: 50vh;
+    float: right;
+}
+.Contact-title {
+    float: left;
+    width: 75%;
+}
+.contact-table {
+    position: absolute;
+    float: left;
+    font-size: 2vh;
+    left: 25vh;
+    top: 15vh;
+    width: 50%
+}
+.contact-table, th, td {
+    border: 2px solid black;
+}
+th, td {
+    padding: 5px;
+    font-size: 2.5vh;
+}
+tr:nth-child(even) {
+    background-color: #999999;
+}
+tr:nth-child(odd) {
+    background-color:  #c7c7c7;
+}
+td:nth-child(odd) {
+    background-color: #ffffff;
+}
+.fa-envelope {
+    color: #c71610;
+}
+.fa-linkedin {
+    color: #2867B2;
+}
+.fa-facebook-square {
+    color: #4267B2;
+}
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-skype {
+    color: #00AFF0;
+}
+.fa-mobile {
+    color: #444444;
+}
+.fa-home {
+    color: #08ad68;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align:center;
+    background-color: #222;
+    color: #818181;
+}

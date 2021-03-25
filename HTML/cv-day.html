@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title id="page-title">CV</title>
+        <link rel="icon" href="https://i.pinimg.com/originals/fc/8a/92/fc8a925ccd279987376fdc028e039ef0.jpg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/index-day.css">
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <ul>
+                    <li><a href="home-day.html"> Home </a></li>
+                    <li><a href="about-day.html"> About me </a></li>
+                    <li><a href="cv-day.html">CV</a></li>
+                    <li><a href="contact-day.html"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="menu" onclick="openNav()"><i class="fa fa-bars fa-2x"></i></span>
+        <a href="cv-day.html" class="button-sun"><i class="fas fa-sun"></i></a>
+        <a href="cv-night.html" class="button-moon"><i class="fas fa-moon"></i></a>
+        <script type="text/javascript" src="../JS/index.js"></script>
+        <br>
+        <section class="center">
+            <h1>Curriculum Vitae</h1>
+        </section>
+        
+        <div id="CV-Ro" style="display:none">
+            <iframe class="iframe-Ro" src="../CV-MINDRU-BOGDAN-RO.pdf"></iframe>
+        </div>
+        <button title="Click to show/hide content" type="button" onclick="OpenCloseIframeRo()" class="button-Ro">My Romanian CV</button>
+        <div id="CV-Eng" style="display:none">
+            <iframe class="iframe-Eng" src="../CV-MINDRU-BOGDAN-ENG.pdf"></iframe>
+        </div>
+        <button title="Click to show/hide content" type="button" onclick="OpenCloseIframeEng()" class="button-Eng">My English CV</button>
+        
+    </body>
+    <footer>
+        <small> 
+            &copy; Copyright 2020, Mîndru Bogdan-Gabriel
+        </small> 
+    </footer>
+</html>
